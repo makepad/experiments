@@ -1,0 +1,19 @@
+workspace.members = [
+    # === examples ===
+    "genai",
+    "xr_net",
+]
+
+workspace.exclude = [
+]
+
+workspace.resolver = "2"
+
+[profile.small]
+inherits = "release"
+#debug = true
+opt-level = 'z'   # Optimize for size
+lto = true        # Enable link-time optimization
+codegen-units = 1 # Reduce number of codegen units to increase optimizations
+panic = 'abort'   # Abort on panic
+strip = true

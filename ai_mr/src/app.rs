@@ -296,6 +296,7 @@ pub struct App {
  
 impl LiveRegister for App {
     fn live_register(cx: &mut Cx) { 
+        log!("GOT HERE!");
         makepad_widgets::live_design(cx);
         cx.link(live_id!(theme), live_id!(theme_desktop_light));
     }
