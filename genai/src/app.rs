@@ -1521,7 +1521,7 @@ impl MatchEvent for App {
         }
 
         let chat = self.ui.text_input(id!(chat));
-        if let Some(val) = chat.returned(&actions){
+        if let Some((val,_)) = chat.returned(&actions){
             chat.set_text(cx, "");
             chat.set_cursor(cx, Cursor { index: 0, prefer_next_row: false }, false);
             self.llm_chat.push((LLMMsg::Human, val));
