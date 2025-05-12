@@ -1105,7 +1105,8 @@ impl App {
 }
 // get a HUE key from here: https://developers.meethue.com/develop/get-started-2/
 const HUE_KEY:&'static str = "Ay0O7saTTq3FNogyKhDwB8WWY7MdIyzeFzzsydRz";
-const HUE_BRIDGE:&'static str = "10.0.0.104";
+//const HUE_BRIDGE:&'static str = "10.0.0.104";
+const HUE_BRIDGE:&'static str = "10.0.0.105";
 
 impl MatchEvent for App {
     fn handle_midi_ports(&mut self, cx: &mut Cx, ports: &MidiPortsEvent) {

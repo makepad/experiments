@@ -424,7 +424,7 @@ live_design!{
             width: Fill,
             height: Fill,
             margin: {top: 0.0, left: 5.0, bottom: 0.0, right: 0.0},
-            text: "Beautiful woman"
+            text: "Beautiful Robot"
             draw_text: {
                 text_style:{font_size: (TEXT_BIG)}
             }
@@ -700,6 +700,7 @@ live_design!{
                     }
                 }
                 image_list = <PortalList> {
+                    max_pull_down: 0.0,
                     height: Fill,
                     width: Fill,
                     margin: {top: 0}
